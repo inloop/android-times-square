@@ -96,16 +96,16 @@ public class CalendarPickerView extends ListView {
     TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CalendarPickerView);
     final int bg = a.getColor(R.styleable.CalendarPickerView_android_background,
         res.getColor(R.color.calendar_bg));
-    dividerColor = a.getColor(R.styleable.CalendarPickerView_dividerColor,
+    dividerColor = a.getColor(R.styleable.CalendarPickerView_tDividerColor,
         res.getColor(R.color.calendar_divider));
-    dayBackgroundResId = a.getResourceId(R.styleable.CalendarPickerView_dayBackground,
+    dayBackgroundResId = a.getResourceId(R.styleable.CalendarPickerView_tDayBackground,
         R.drawable.calendar_bg_selector);
-    dayTextColorResId = a.getResourceId(R.styleable.CalendarPickerView_dayTextColor,
+    dayTextColorResId = a.getResourceId(R.styleable.CalendarPickerView_tDayTextColor,
         R.color.calendar_text_selector);
     titleTextColor =
-        a.getColor(R.styleable.CalendarPickerView_titleTextColor, R.color.calendar_text_active);
+        a.getColor(R.styleable.CalendarPickerView_tTitleTextColor, R.color.calendar_text_active);
     headerTextColor =
-        a.getColor(R.styleable.CalendarPickerView_headerTextColor, R.color.calendar_text_active);
+        a.getColor(R.styleable.CalendarPickerView_tHeaderTextColor, R.color.calendar_text_active);
     a.recycle();
 
     adapter = new MonthAdapter();

@@ -9,25 +9,25 @@ import com.squareup.timessquare.MonthCellDescriptor.RangeState;
 
 public class CalendarCellView extends TextView {
   private static final int[] STATE_SELECTABLE = {
-      R.attr.state_selectable
+      R.attr.tState_selectable
   };
   private static final int[] STATE_CURRENT_MONTH = {
-      R.attr.state_current_month
+      R.attr.tState_current_month
   };
   private static final int[] STATE_TODAY = {
-      R.attr.state_today
+      R.attr.tState_today
   };
   private static final int[] STATE_HIGHLIGHTED = {
-      R.attr.state_highlighted
+      R.attr.tState_highlighted
   };
   private static final int[] STATE_RANGE_FIRST = {
-      R.attr.state_range_first
+      R.attr.tState_range_first
   };
   private static final int[] STATE_RANGE_MIDDLE = {
-      R.attr.state_range_middle
+      R.attr.tState_range_middle
   };
   private static final int[] STATE_RANGE_LAST = {
-      R.attr.state_range_last
+      R.attr.tState_range_last
   };
 
   private boolean isSelectable = false;
